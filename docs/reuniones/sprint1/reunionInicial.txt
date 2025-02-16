@@ -1,0 +1,8 @@
+Scrum 13-02-2025
+-Asignacion de scrum master a Cristian
+-Creada estructura GitHub
+-Reparticion de tareas:
+	-Rafa: Primera parte del diagrama UML
+	-Marcos: Segunda parte del diagrama UML (dependencia de primera parte)
+	-Erik: Tercera parte del diagrama UML
+	-Anibal: Creación de la estructura Libgdx para Android Studio

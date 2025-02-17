@@ -68,10 +68,12 @@ dependencies {
   natives "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-armeabi-v7a"
   natives "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-x86"
   natives "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-x86_64"
-  natives "com.crashinvaders.basisu:basisu-wrapper:natives-arm64-v8a"
-  natives "com.crashinvaders.basisu:basisu-wrapper:natives-armeabi-v7a"
-  natives "com.crashinvaders.basisu:basisu-wrapper:natives-x86"
-  natives "com.crashinvaders.basisu:basisu-wrapper:natives-x86_64"
+
+  //Si descomentas esto, peta
+  //natives "com.crashinvaders.basisu:basisu-wrapper:natives-arm64-v8a"
+  //natives "com.crashinvaders.basisu:basisu-wrapper:natives-armeabi-v7a"
+  //natives "com.crashinvaders.basisu:basisu-wrapper:natives-x86"
+  //natives "com.crashinvaders.basisu:basisu-wrapper:natives-x86_64"
 
 }
 

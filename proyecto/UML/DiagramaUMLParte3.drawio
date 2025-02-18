@@ -1,0 +1,64 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 OPR/116.0.0.0" version="26.0.14">
+  <diagram name="Página-1" id="VtDsmJH3GoW-0t2qVMz7">
+    <mxGraphModel dx="2167" dy="924" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="J3SdbbiKFg_LUEK7YrH7-1" value="Squadron" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="20" y="180" width="260" height="168" as="geometry" />
+        </mxCell>
+        <mxCell id="J3SdbbiKFg_LUEK7YrH7-2" value="-Enemigos List&amp;lt;enemigo&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="J3SdbbiKFg_LUEK7YrH7-1" vertex="1">
+          <mxGeometry y="26" width="260" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="J3SdbbiKFg_LUEK7YrH7-4" value="+ CrearEnemigo(Enemigo enemigo):void&lt;div&gt;+EliminarEnemigo&amp;nbsp;(Enemigo enemigo): void&lt;/div&gt;&lt;div&gt;+getEnemigos():&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;List&amp;lt;Enemigo&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;+getEnemigosContador(): int&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;/span&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="J3SdbbiKFg_LUEK7YrH7-1" vertex="1">
+          <mxGeometry y="60" width="260" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="J3SdbbiKFg_LUEK7YrH7-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="J3SdbbiKFg_LUEK7YrH7-1" vertex="1">
+          <mxGeometry y="160" width="260" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="J3SdbbiKFg_LUEK7YrH7-5" value="Battallion" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="390" y="140" width="290" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="J3SdbbiKFg_LUEK7YrH7-6" value="-squadrons: List&amp;lt;Squadron&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="J3SdbbiKFg_LUEK7YrH7-5" vertex="1">
+          <mxGeometry y="26" width="290" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="J3SdbbiKFg_LUEK7YrH7-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="J3SdbbiKFg_LUEK7YrH7-5" vertex="1">
+          <mxGeometry y="60" width="290" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="J3SdbbiKFg_LUEK7YrH7-8" value="&lt;code style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: transparent;&quot; data-end=&quot;1286&quot; data-start=&quot;1248&quot;&gt;+AñadirSquadron(Squadron squadron): void&lt;/code&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: transparent;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;code style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: transparent;&quot; data-end=&quot;1369&quot; data-start=&quot;1328&quot;&gt;+EiminarSquadron(Squadron squadron): void&lt;/code&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: transparent;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;code style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: transparent;&quot; data-end=&quot;1446&quot; data-start=&quot;1414&quot;&gt;+getSquadrons(): List&amp;lt;Squadron&amp;gt;&lt;/code&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: transparent;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;code style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: transparent;&quot; data-end=&quot;1513&quot; data-start=&quot;1488&quot;&gt;+getSquadronContador(): int&lt;/code&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: transparent;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="J3SdbbiKFg_LUEK7YrH7-5" vertex="1">
+          <mxGeometry y="68" width="290" height="152" as="geometry" />
+        </mxCell>
+        <mxCell id="J3SdbbiKFg_LUEK7YrH7-9" value="Game" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="800" y="170" width="190" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="J3SdbbiKFg_LUEK7YrH7-10" value="- Player jugador&lt;div&gt;- Battallion batallon&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="J3SdbbiKFg_LUEK7YrH7-9" vertex="1">
+          <mxGeometry y="26" width="190" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="J3SdbbiKFg_LUEK7YrH7-11" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="J3SdbbiKFg_LUEK7YrH7-9" vertex="1">
+          <mxGeometry y="70" width="190" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="J3SdbbiKFg_LUEK7YrH7-12" value="&lt;code data-end=&quot;1144&quot; data-start=&quot;1125&quot;&gt;+startGame(): void&lt;/code&gt;&amp;nbsp;&lt;div&gt;&lt;code style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: transparent;&quot; data-end=&quot;1198&quot; data-start=&quot;1171&quot;&gt;+playerAttackEnemy(): void&lt;/code&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: transparent;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;code style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: transparent;&quot; data-end=&quot;1343&quot; data-start=&quot;1320&quot;&gt;+isGameOver(): boolean&lt;/code&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: transparent;&quot;&gt;+isGameStart(): boolean&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: transparent;&quot;&gt;+finishedBatallion(): void&amp;nbsp;&lt;/span&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="J3SdbbiKFg_LUEK7YrH7-9" vertex="1">
+          <mxGeometry y="78" width="190" height="112" as="geometry" />
+        </mxCell>
+        <mxCell id="J3SdbbiKFg_LUEK7YrH7-17" value="3" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;rounded=0;" parent="1" edge="1">
+          <mxGeometry x="-1" y="3" relative="1" as="geometry">
+            <mxPoint x="380" y="263.91" as="sourcePoint" />
+            <mxPoint x="280" y="263.41" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="326.52" y="264.42" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="J3SdbbiKFg_LUEK7YrH7-18" value="1" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;rounded=0;" parent="1" edge="1">
+          <mxGeometry x="-1" y="3" relative="1" as="geometry">
+            <mxPoint x="790" y="254.91000000000003" as="sourcePoint" />
+            <mxPoint x="690" y="254.41000000000003" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="736.52" y="255.42000000000002" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,26 +1,43 @@
 package com.beta.spaceInvaders;
 
+import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+
 public class ObjetoVolador {
-    private int x;
-    private int y;
+    private int posicionX;
+    private int posicionY;
+    private int tamanioX;
+    private int tamanioY;
     private int velocidadX;
     private int velocidadY;
     private boolean activo;
+    private Texture imagen;
 
-    public ObjetoVolador(int x, int y, int velocidadX, int velocidadY, boolean activo) {
-        this.x = x;
-        this.y = y;
+    public ObjetoVolador(int posicionX, int posicionY, int tamanioX, int tamanioY, int velocidadX, int velocidadY, boolean activo, Texture imagen) {
+        this.posicionX = posicionX;
+        this.posicionY = posicionY;
+        this.tamanioX = tamanioX;
+        this.tamanioY = tamanioY;
         this.velocidadX = velocidadX;
         this.velocidadY = velocidadY;
         this.activo = activo;
+        this.imagen = imagen;
     }
 
-    public int getX() {
-        return x;
+    public int getPosicionX() {
+        return posicionX;
     }
 
-    public int getY() {
-        return y;
+    public int getPosicionY() {
+        return posicionY;
+    }
+
+    public int getTamanioX() {
+        return tamanioX;
+    }
+
+    public int getTamanioY() {
+        return tamanioY;
     }
 
     public int getVelocidadX() {
@@ -31,49 +48,15 @@ public class ObjetoVolador {
         return velocidadY;
     }
 
-    public boolean isActivo() {
+    public Texture getImagen() {
+        return imagen;
+    }
+
+    public boolean getActivo() {
         return activo;
     }
 
-    public boolean mover(int direccion, int limiteX, int limiteY) {
-        switch (direccion) {
-            case 1:
-                if(this.x < limiteX) {
-                    this.x++; //Derecha
-                    return true;
-                }
-                break;
-            case 2:
-                if(this.x > 0) {
-                    this.x--; //Izquierda
-                    return true;
-                }
-                break;
-            case 3:
-                if(this.y < limiteY) {
-                    this.y++; //Arriba
-                    return true;
-                }
-                break;
-            case 4:
-                if(this.y > 0) {
-                    this.y--; //Abajo
-                    return true;
-                }
-                break;
-        }
-        return false;
-    }
-
-    public boolean esActivo() {
-        return this.activo;
-    }
-
-    public boolean desaparecer() {
-        if (this.activo) {
-            this.activo = false;
-            return true;
-        }
-        return false;
+    public void pintarse(SpriteBatch batch) {
+        batch.draw(imagen,posicionX,posicionY,tamanioX,tamanioY);
     }
 }

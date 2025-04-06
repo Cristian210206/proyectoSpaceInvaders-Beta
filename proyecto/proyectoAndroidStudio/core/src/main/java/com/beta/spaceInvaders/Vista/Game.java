@@ -95,6 +95,13 @@ public class Game extends ApplicationAdapter {
                 if(Gdx.input.isKeyJustPressed(Input.Keys.SPACE)) {
                     jugador.disparar(imgDisparoJugador);
                 }
+                if (Gdx.input.justTouched()) {
+                    if (Gdx.input.getX() < jugador.getPosicionX()) {
+                        direccion_Jugador = ObjetoVolador.Direccion.IZQUIERDA; //Desplazamiento a la izquierda
+                    } else {
+                        direccion_Jugador = ObjetoVolador.Direccion.DERECHA; //Desplazamiento a la derecha
+                    }
+                }
                 jugador.moverse(jugador.getVelocidadX(), direccion_Jugador,TAMANIO_PANTALLA_X);
                 for(Disparo disparo :Player.disparos) {
                     disparo.moverse(disparo.getVelocidadY(),ObjetoVolador.Direccion.ARRIBA,TAMANIO_PANTALLA_X);

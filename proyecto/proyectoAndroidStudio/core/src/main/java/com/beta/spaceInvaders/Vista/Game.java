@@ -96,10 +96,16 @@ public class Game extends ApplicationAdapter {
                     jugador.disparar(imgDisparoJugador);
                 }
                 if (Gdx.input.justTouched()) {
-                    if (Gdx.input.getX() < jugador.getPosicionX()) {
+                    //Esto no se puede implementar como un control normal, porque si no va a recibir por cada frame un imput
+                    //ie, no va a seguir el click, va a seguir el ratón, siempre
+                    if (Gdx.input.getX() < jugador.getPosicionX()) { //esto es para desplazarse lateralmente usando touch en lwjgl o android
                         direccion_Jugador = ObjetoVolador.Direccion.IZQUIERDA; //Desplazamiento a la izquierda
                     } else {
                         direccion_Jugador = ObjetoVolador.Direccion.DERECHA; //Desplazamiento a la derecha
+                    }
+                    if (Gdx.input.getY() < TAMANIO_PANTALLA_Y/2) {
+                        jugador.disparar(imgDisparoJugador);
+                        //La idea es que si tocas por encima de la mitad de la pantalla, disparas, no se me ocurre algo mejor
                     }
                 }
                 jugador.moverse(jugador.getVelocidadX(), direccion_Jugador,TAMANIO_PANTALLA_X);
